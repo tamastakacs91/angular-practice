@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title:string = 'angular-practice-001';
+
+  getName() {
+    return 'Bond, James Bond'
+  }
 
 }

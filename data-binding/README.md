@@ -2,7 +2,7 @@
 
 ## Tasks
 * Create a member for the app component, named `title`, value `angular-practice-001`.
-* Interpolate the `title` member into the first `h1` element in the template. 
+* Interpolate the `title` member into the first `h1` element in the template.
 The full content of `h1` must be `Welcome to angular-practice-001!`.
 * Create a method for the app component, named `getName`, which gives this text: 
 `Bond, James Bond`.
