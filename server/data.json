@@ -1,0 +1,28 @@
+{
+  "film": [
+    {
+      "id": 1,
+      "title": "Edge of Tomorrow",
+      "release": 2011,
+      "actor": "Tom Cruise"
+    },
+    {
+      "id": 2,
+      "title": "Sound of Music",
+      "release": 1965,
+      "actor": "Julie Andrews"
+    },
+    {
+      "id": 6,
+      "title": "Lord of the Rings",
+      "release": 2004,
+      "actor": "Ian McKellen"
+    },
+    {
+      "id": 7,
+      "title": "Lord of the Rings",
+      "release": 2004,
+      "actor": "Ian McKellen"
+    }
+  ]
+}
