@@ -16,6 +16,9 @@ export class FilmsService {
   getAll(): Observable<Film[]> {
     return this.http.get<Film[]>(this.jsonUrl);
   };
+  //a get metódus Observable-el tér vissza.
+  //ha a metódus után megadjuk, hogy pontosan milyen Observable-el tér vissza (nem any),
+  //akkor meg kell határozni a típust a get után!
 
   getOne(id: string | number): Observable<Film> {
     return this.http.get<Film>(`${this.jsonUrl}/${id}`);
@@ -35,3 +38,8 @@ export class FilmsService {
   };
 
 }
+
+//1. létrehoztunk egy class-t, amiben definiáltuk a Film-et (model/film.ts)
+//2. felveszünk egy változót, ami a json fájl URL-je (itt)
+//3. appModule-ba import a HttpClientModule és berak az Imports tömbbe ugyanitt
+//4. itt a service-ben a megadjuk a constructor paraméterének a HttpClient-et. importálni is kell fent!
