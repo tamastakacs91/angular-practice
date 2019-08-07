@@ -23,18 +23,24 @@ export class FilmsService {
   getOne(id: string | number): Observable<Film> {
     return this.http.get<Film>(`${this.jsonUrl}/${id}`);
   };
+  //itt is megadjuk a típust. jelen esetben EGY filmmel fog visszatérni az ID alapján
 
-  add(film: Film): Observable<any> {
-    return this.http.post<Observable<any>>(this.jsonUrl, film);
+  create(film: Film): Observable<Film> {
+    return this.http.post<Film>(this.jsonUrl, film);
   };
 
-  update(film: Film): Observable<any> {
-    return this.http.put(`${this.jsonUrl}/${film.id}`, film);
+  update(film: Film): Observable<Film> {
+    return this.http.put<Film>(`${this.jsonUrl}/${film.id}`, film);
   }
+  //paraméterek: hova küldje az adatot és mit küldjön
 
-  remove(film: any | number): Observable<any> {
-    film = film.id ? film.id : film;
-    return this.http.delete(`${this.jsonUrl}/${film}`);
+  // remove(film: any | number): Observable<any> {
+  //   film = film.id ? film.id : film;
+  //   return this.http.delete(`${this.jsonUrl}/${film}`);
+  // };
+
+  remove(id: number): Observable<any> {
+    return this.http.delete(`${this.jsonUrl}/${id}`);
   };
 
 }
@@ -43,3 +49,6 @@ export class FilmsService {
 //2. felveszünk egy változót, ami a json fájl URL-je (itt)
 //3. appModule-ba import a HttpClientModule és berak az Imports tömbbe ugyanitt
 //4. itt a service-ben a megadjuk a constructor paraméterének a HttpClient-et. importálni is kell fent!
+
+
+//json server dokumentáció - hogyan lehet finomítani a kiválasztást
