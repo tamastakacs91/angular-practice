@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './page/index/index.component';
 import { UserListComponent } from './page/user-list/user-list.component';
+import { UserEditComponent } from './page/user-edit/user-edit.component';
 
 //a routes tömb objektumokat vár
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "users",
     component: UserListComponent
+  },
+  {
+    path: "users/:id", //a :id azt jelenti, hogy az URL-ben az egy változó lesz
+    component: UserEditComponent
   },
   {
     path: "**",   //nem mindegy a sorrend! a ** (fallback url) mindig a végére kell

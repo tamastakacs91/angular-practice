@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/service/user.service';
+import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-user-list',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  constructor() { }
+  userList: User[] = [];
+
+  constructor(private userService: UserService) {
+    this.userList = this.userService.list;
+  }
 
   ngOnInit() {
   }
 
+  //fix változókat a constructorba tegyük inkább
+  //subscribe menjen az OnInit-be
 }
