@@ -1,28 +1,46 @@
 {
   "film": [
     {
-      "id": 1,
-      "title": "Edge of Tomorrow",
-      "release": 2011,
-      "actor": "Tom Cruise"
-    },
-    {
-      "id": 2,
-      "title": "Sound of Music",
-      "release": 1965,
-      "actor": "Julie Andrews"
-    },
-    {
       "id": 6,
+      "title": "Pulp Fiction",
+      "release": 1994,
+      "actor": "John Travolta"
+    },
+    {
+      "id": 8,
       "title": "Lord of the Rings",
-      "release": 2004,
+      "release": "2004",
       "actor": "Ian McKellen"
     },
     {
-      "id": 7,
-      "title": "Lord of the Rings",
-      "release": 2004,
-      "actor": "Ian McKellen"
+      "id": 9,
+      "title": "Eredet",
+      "release": "2009",
+      "actor": "Leonardo di Caprio"
+    },
+    {
+      "id": 10,
+      "title": "Mindhunter",
+      "release": "2017",
+      "actor": "Ron Holand"
+    },
+    {
+      "id": 11,
+      "title": "Star Wars",
+      "release": 1990,
+      "actor": "Mark Hamill"
+    },
+    {
+      "id": 12,
+      "title": "Valami Amerika",
+      "release": 1990,
+      "actor": "Szabó Győző"
+    },
+    {
+      "id": 13,
+      "title": "Rock'n'Rolla",
+      "release": "2012",
+      "actor": "Guy Ritchie"
     }
   ]
 }

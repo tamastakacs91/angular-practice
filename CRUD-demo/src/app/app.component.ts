@@ -91,6 +91,7 @@ export class AppComponent implements OnInit {
   constructor(
     private fService: FilmsService
     //ez tartja a kapcsolatot a szerverrel, beinjektáltuk, azaz felvettük a contructor paraméterei közé
+    //a konstruktorba írjuk bele azokat az osztályokat, szervízeket, amikre a komponensnek szüksége van
   ) {
     /* !!!!!constructor és onInint különbségek!!!!!
     a constructor minden módosításnál lefut: ezért van az, hogy pl a második lefutásnál hibát ad ki
