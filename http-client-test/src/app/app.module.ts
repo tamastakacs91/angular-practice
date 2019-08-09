@@ -4,6 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { IndexComponent } from './page/index/index.component';
+
 
 const appRoutes: Routes = [
 
@@ -11,7 +14,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
