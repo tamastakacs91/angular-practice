@@ -1,1 +1,22 @@
-<p>index works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to the user Dashboard!</h1>
+        <p class="lead">Delete, update an existing user, or add a new one!</p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg"
+           routerLink="/users"
+           role="button">User Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>
+  Number of users: {{numberOfUsers}}
+</h1>
+<h1>Active users: {{activeUsers}}</h1>
+<h1>Inactive users: {{inactiveUsers}}</h1>
+<h1>Total balance: ${{totalBalance}}</h1>
+<h1>Apple lovers: {{appleLovers}}</h1>

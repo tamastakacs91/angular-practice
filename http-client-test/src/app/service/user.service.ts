@@ -17,4 +17,10 @@ export class UserService {
   getAll(): Observable<User[]> {
     return this.http.get<User[]>(this.jsonUrl);
   }
+
+  remove(id: number): Observable<any> {
+    return this.http.delete(`${this.jsonUrl}/${id}`);
+  };
+
+  
 }

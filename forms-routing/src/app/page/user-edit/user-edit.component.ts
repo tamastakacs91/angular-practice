@@ -13,9 +13,10 @@ export class UserEditComponent implements OnInit {
   user: User = new User();
 
   constructor(
-    private ar: ActivatedRoute,
+    private ar: ActivatedRoute, //Angular-os beépített. Mindig azt figyeli, hogy melyik route van betöltve. Observable
     private userService: UserService) {
-    this.ar.params.forEach(params => {
+    this.ar.params.forEach(params => { //a forEach egy leegyszerűsített Observable. Visszaad egy promis-et. Egyszer feliratkozik,
+      //kiolvassa, ami kell neki és leiratkozik
       //console.log(params.id);
       this.user = this.userService.get(params.id)
     })
@@ -48,3 +49,6 @@ export class UserEditComponent implements OnInit {
 //2. menü vagy navbar elkészítése külön komponensbe. az anchorban href helyett a routerLink direktívát
 //használjuk. Itt már kell / jel a link elé. Pl. routerLink = "/users"
 //3. elhelyezzük a router-outletet, ahol meg akarjuk jeleníttetni a tartalmat
+
+//4. Hogyan tudjuk meg, hogy milyen URL kell?
+//params Observable. ezt átalakítjuk promise-szé forEach-csel és kiszedem belőle az adatot
