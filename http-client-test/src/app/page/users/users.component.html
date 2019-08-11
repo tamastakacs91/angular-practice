@@ -1,3 +1,13 @@
+<div class="container">
+  <div class="row text-right">
+    <div class="col-12">
+      <button class="btn btn-warning new-user">
+        <a routerLink="/new-user">Create New User</a>
+      </button>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-10 offset-1">
@@ -5,8 +15,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-10 offset-1">
-      <table class="table table-striped">
+    <div class="col-10 offset-1 ">
+      <table class="table table-striped ">
         <thead>
           <tr>
             <th>#</th>
@@ -21,14 +31,15 @@
 
         <tbody>
           <tr *ngFor="let user of userList">
-            <td>{{ user.id }}</td>
-            <td>{{ user.name.last }} {{ user.name.first }}</td>
-            <td>{{ user.isActive }}</td>
-            <td>{{ user.age }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.phone }}</td>
-            <td>
-              <button class="btn btn-info">Update</button>
+            <td class="align-middle">{{ user.id }}</td>
+            <td class="align-middle">{{ user.name.last }} {{ user.name.first }}</td>
+            <td class="align-middle">{{ user.isActive }}</td>
+            <td class="align-middle">{{ user.age }}</td>
+            <td class="align-middle">{{ user.email }}</td>
+            <td class="align-middle">{{ user.phone }}</td>
+            <td class="align-middle">
+              <button class="btn btn-info"
+                      routerLink="/users/{{user.id}}">Update</button>
               <button class="btn btn-danger"
                       (click)="onDelete(user)">Delete</button>
             </td>

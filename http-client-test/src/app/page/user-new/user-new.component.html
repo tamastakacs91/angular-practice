@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Create a New User</h1>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-12">
+    <form action=""
+          (submit)="onSubmit($event)">
+
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text"
+               class="form-control"
+               name="firstname"
+               required
+               [(ngModel)]="newUser.name.first">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text"
+               class="form-control"
+               name="lastname"
+               required
+               [(ngModel)]="newUser.name.last">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number"
+               class="form-control"
+               name="age"
+               required
+               [(ngModel)]="newUser.age">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email"
+               class="form-control"
+               name="email"
+               required
+               [(ngModel)]="newUser.email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel"
+               class="form-control"
+               name="phone"
+               required
+               [(ngModel)]="newUser.phone">
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-primary">Create</button>
+          <button class="btn btn-danger"
+                  (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.new-user a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 99px;
+}
+
+button {
+  margin-left: 10px;
+  margin-rigth: 10px;
+}
+
+.new-user {
+  margin-top: 40px;
+  width: 17%;
+}

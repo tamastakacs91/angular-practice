@@ -32,16 +32,18 @@ export class UsersComponent implements OnInit, OnDestroy {
   }
 
   onDelete(user: User) {
-    this.userService.remove(user.id).subscribe(
-      response => {
-        let index = this.userList.indexOf(user);
-        console.log(index, user);
-        this.userList.splice(index, 1);
-        this.changeCounter++;
+    if (confirm('Are you sure you want to delete?')) {
+      this.userService.remove(user.id).subscribe(
+        response => {
+          let index = this.userList.indexOf(user);
+          console.log(index, user);
+          this.userList.splice(index, 1);
+          this.changeCounter++;
 
-      },
-      err => console.error(err),
-    );
+        },
+        err => console.error(err),
+      );
+    }
   }
 
 }
