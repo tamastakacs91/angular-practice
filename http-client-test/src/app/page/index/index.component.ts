@@ -3,6 +3,13 @@ import { Subscription } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons';
+import { faAppleAlt } from '@fortawesome/free-solid-svg-icons';
+
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
@@ -18,6 +25,13 @@ export class IndexComponent implements OnInit, OnDestroy {
   inactiveUsers: number = 0;
   totalBalance: number = 0;
   appleLovers: number = 0;
+
+  //fontAwesome icons
+  faUsers = faUsers;
+  faGlobe = faGlobe;
+  faPowerOff = faPowerOff;
+  faMoneyCheckAlt = faMoneyCheckAlt;
+  faAppleAlt = faAppleAlt;
 
   constructor(
     private userService: UserService

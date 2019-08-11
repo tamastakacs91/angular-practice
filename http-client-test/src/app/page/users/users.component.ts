@@ -39,7 +39,6 @@ export class UsersComponent implements OnInit, OnDestroy {
           console.log(index, user);
           this.userList.splice(index, 1);
           this.changeCounter++;
-
         },
         err => console.error(err),
       );

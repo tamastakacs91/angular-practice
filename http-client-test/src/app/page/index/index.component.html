@@ -13,10 +13,71 @@
   </div>
 </div>
 
-<h1>
-  Number of users: {{numberOfUsers}}
-</h1>
-<h1>Active users: {{activeUsers}}</h1>
-<h1>Inactive users: {{inactiveUsers}}</h1>
-<h1>Total balance: ${{totalBalance}}</h1>
-<h1>Apple lovers: {{appleLovers}}</h1>
+
+<div class="card-group">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <fa-icon [icon]="faUsers"></fa-icon>
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Number of all Users</h5>
+            <div>{{numberOfUsers}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <fa-icon [icon]="faGlobe"></fa-icon>
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Number of Active Users</h5>
+            <div>{{activeUsers}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <fa-icon [icon]="faPowerOff"></fa-icon>
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Number of Inactive Users</h5>
+            <div>{{inactiveUsers}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 col-md-4 offset-md-2">
+        <div class="card">
+          <fa-icon [icon]="faMoneyCheckAlt"></fa-icon>
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Total Balance</h5>
+            <div>{{totalBalance}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <fa-icon [icon]="faAppleAlt"></fa-icon>
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Apple Lovers</h5>
+            <div>{{appleLovers}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

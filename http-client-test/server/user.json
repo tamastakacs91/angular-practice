@@ -1,118 +1,6 @@
 {
   "user": [
     {
-      "id": 5,
-      "guid": "1e5a0f2e-4f79-49ad-a248-1c9a43e13828",
-      "isActive": false,
-      "balance": "$1,288.82",
-      "picture": "http://placehold.it/32x32",
-      "age": 27,
-      "eyeColor": "green",
-      "name": {
-        "first": "Rush",
-        "last": "Merritt"
-      },
-      "company": "NITRACYR",
-      "email": "rush.merritt@nitracyr.biz",
-      "phone": "+1 (863) 411-2273",
-      "address": "413 River Street, Forestburg, Minnesota, 3890",
-      "about": "Non exercitation excepteur ullamco qui ut. Nostrud ad eu laborum eiusmod aute est excepteur sint ut aliqua tempor cillum reprehenderit qui. Veniam proident amet laboris in excepteur nostrud voluptate reprehenderit deserunt qui do aute laboris.",
-      "registered": "Wednesday, June 24, 2015 10:07 PM",
-      "latitude": "-85.302388",
-      "longitude": "-24.208209",
-      "tags": [
-        "esse",
-        "eiusmod",
-        "aliquip",
-        "occaecat",
-        "officia"
-      ],
-      "range": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Patrick Velez"
-        },
-        {
-          "id": 1,
-          "name": "Robin Deleon"
-        },
-        {
-          "id": 2,
-          "name": "Josie Christensen"
-        }
-      ],
-      "greeting": "Hello, Rush! You have 5 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
-      "id": 6,
-      "guid": "8c4540e5-9125-4c06-8204-f7464832a002",
-      "isActive": true,
-      "balance": "$2,898.34",
-      "picture": "http://placehold.it/32x32",
-      "age": 22,
-      "eyeColor": "brown",
-      "name": {
-        "first": "Boyle",
-        "last": "Harrington"
-      },
-      "company": "ELPRO",
-      "email": "boyle.harrington@elpro.tv",
-      "phone": "+1 (936) 497-3831",
-      "address": "185 Clara Street, Deltaville, Hawaii, 8532",
-      "about": "Quis laboris labore aute excepteur. Laborum aute aliqua mollit id in do. Cillum sint mollit deserunt culpa sit nostrud id veniam aliquip est. Commodo consequat irure reprehenderit elit labore labore consectetur dolore nulla non et non id fugiat.",
-      "registered": "Wednesday, March 6, 2019 7:42 PM",
-      "latitude": "67.482629",
-      "longitude": "-132.329463",
-      "tags": [
-        "ea",
-        "aliqua",
-        "occaecat",
-        "consectetur",
-        "reprehenderit"
-      ],
-      "range": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Patterson Haley"
-        },
-        {
-          "id": 1,
-          "name": "Reyna Calhoun"
-        },
-        {
-          "id": 2,
-          "name": "Carson Morrison"
-        }
-      ],
-      "greeting": "Hello, Boyle! You have 5 unread messages.",
-      "favoriteFruit": "strawberry"
-    },
-    {
       "id": 7,
       "guid": "b9fa3e2a-d911-4a4b-89fd-61e6142618ae",
       "isActive": false,
@@ -121,7 +9,7 @@
       "age": 28,
       "eyeColor": "green",
       "name": {
-        "first": "Lindsey",
+        "first": "Julie",
         "last": "Short"
       },
       "company": "CIRCUM",
@@ -5375,6 +5263,19 @@
       ],
       "greeting": "Hello, Carlson! You have 6 unread messages.",
       "favoriteFruit": "strawberry"
+    },
+    {
+      "id": 102,
+      "name": {
+        "first": "Takács",
+        "last": "Tamás"
+      },
+      "isActive": false,
+      "age": 18,
+      "email": "tamas.takacs91@gmail.com",
+      "phone": "703697937",
+      "balance": "$0",
+      "favoriteFruit": ""
     }
   ]
 }
