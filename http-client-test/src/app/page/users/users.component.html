@@ -1,7 +1,25 @@
+<div class="container text-center search-container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <input [(ngModel)]="filterInput"
+             type="text"
+             class="form-control"
+             id="search-field">
+    </div>
+    <div class="col-12 col-md-4">
+      <button class="btn btn-warning"
+              (click)="setfilterPhrase()">Start Search</button>
+      <button class="btn btn-info"
+              (click)="resetSearch()">Reset Search</button>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-  <div class="row text-right">
-    <div class="col-12">
-      <button class="btn btn-warning new-user">
+  <div class="row text-center">
+    <div class="col-12 col-md-8"></div>
+    <div class="col-12 col-md-4 text-center">
+      <button class="btn btn-success new-user">
         <a routerLink="/new-user">Create New User</a>
       </button>
     </div>
@@ -19,18 +37,18 @@
       <table class="table table-striped text-center">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Active</th>
-            <th>Age</th>
-            <th>Email</th>
-            <th>Phone</th>
+            <th (click)="setOrderKey('id')">#</th>
+            <th (click)="setOrderKey('name')">Name</th>
+            <th (click)="setOrderKey('isActive')">Active</th>
+            <th (click)="setOrderKey('age')">Age</th>
+            <th (click)="setOrderKey('email')">Email</th>
+            <th (click)="setOrderKey('phone')">Phone</th>
             <th>Actions</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr *ngFor="let user of userList">
+          <tr *ngFor="let user of userList | filter: filterPhrase: changeCounter | order: orderKey: orderDirection: changeCounter">
             <td class="align-middle">{{ user.id }}</td>
             <td class="align-middle">{{ user.name.last }} {{ user.name.first }}</td>
             <td class="align-middle">{{ user.isActive }}</td>

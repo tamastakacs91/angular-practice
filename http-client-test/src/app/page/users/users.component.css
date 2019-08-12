@@ -13,10 +13,19 @@ button {
 }
 
 .new-user {
-  margin-top: 40px;
-  width: 17%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 250px;
 }
 
 th {
   font-size: 20px;
+}
+
+#search-field {
+  border-radius: 99px;
+}
+
+.search-container {
+  margin-top: 20px;
 }

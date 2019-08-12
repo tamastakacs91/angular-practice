@@ -12,6 +12,8 @@ import { IndexComponent } from './page/index/index.component';
 import { UsersComponent } from './page/users/users.component';
 import { UserUpdateComponent } from './page/user-update/user-update.component';
 import { UserNewComponent } from './page/user-new/user-new.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import { OrderPipe } from './pipe/order.pipe';
 
 
 const appRoutes: Routes = [
@@ -40,7 +42,9 @@ const appRoutes: Routes = [
     IndexComponent,
     UsersComponent,
     UserUpdateComponent,
-    UserNewComponent
+    UserNewComponent,
+    FilterPipe,
+    OrderPipe,
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,13 @@ export class UsersComponent implements OnInit, OnDestroy {
   userList: User[];
   userSubscription: Subscription;
   changeCounter: number = 0;
+  filterPhrase: string = '';
+  filterInput: string = '';
+  orderKey: string = '';
+  orderDirection: number = 1;
+
+
+
 
   constructor(
     private userService: UserService
@@ -29,6 +36,24 @@ export class UsersComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.userSubscription.unsubscribe();
+  }
+
+  setOrderKey(key: string): void {
+    if (key === this.orderKey) {
+      this.orderDirection = this.orderDirection == 1 ? -1 : 1;
+    } else {
+      this.orderDirection = 1;
+    }
+    this.orderKey = key;
+    console.log(this.orderKey);
+  }
+
+  setfilterPhrase() {
+    this.filterPhrase = this.filterInput;
+  }
+  resetSearch() {
+    this.filterPhrase = '';
+    this.filterInput = '';
   }
 
   onDelete(user: User) {
