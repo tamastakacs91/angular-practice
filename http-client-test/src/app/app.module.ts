@@ -33,6 +33,10 @@ const appRoutes: Routes = [
     path: "new-user",
     component: UserNewComponent
   },
+  {
+    path: "**",
+    component: IndexComponent
+  }
 ];
 
 @NgModule({
