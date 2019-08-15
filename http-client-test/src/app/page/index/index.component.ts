@@ -46,7 +46,7 @@ export class IndexComponent implements OnInit, OnDestroy {
         this.getNumberOfUsers();
         this.getUserStatus();
         this.getTotalBalance();
-        this.getAppleLovers();
+        //this.getAppleLovers();
       }
     );
   }

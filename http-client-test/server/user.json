@@ -1,62 +1,6 @@
 {
   "user": [
     {
-      "id": 7,
-      "guid": "b9fa3e2a-d911-4a4b-89fd-61e6142618ae",
-      "isActive": false,
-      "balance": "$3,451.84",
-      "picture": "http://placehold.it/32x32",
-      "age": 28,
-      "eyeColor": "green",
-      "name": {
-        "first": "Julie",
-        "last": "Short"
-      },
-      "company": "CIRCUM",
-      "email": "lindsey.short@circum.info",
-      "phone": "+1 (828) 452-3834",
-      "address": "702 Hyman Court, Austinburg, Virgin Islands, 3682",
-      "about": "Proident excepteur labore et culpa aliquip ullamco. Officia fugiat eiusmod adipisicing excepteur proident incididunt consectetur exercitation enim nostrud incididunt. Duis ea anim duis consequat qui cupidatat laboris mollit esse ea ad aliquip ad. Esse Lorem veniam mollit Lorem tempor exercitation qui irure qui. Consectetur ea ad et minim sit.",
-      "registered": "Monday, September 4, 2017 11:01 PM",
-      "latitude": "-3.538575",
-      "longitude": "120.536585",
-      "tags": [
-        "cillum",
-        "ullamco",
-        "tempor",
-        "proident",
-        "esse"
-      ],
-      "range": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Sampson Long"
-        },
-        {
-          "id": 1,
-          "name": "Ronda Dennis"
-        },
-        {
-          "id": 2,
-          "name": "Oneill Cross"
-        }
-      ],
-      "greeting": "Hello, Lindsey! You have 10 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
       "id": 8,
       "guid": "a8e40395-50bb-429b-9abf-0a67ec7505ed",
       "isActive": false,
@@ -5267,13 +5211,39 @@
     {
       "id": 102,
       "name": {
-        "first": "Takács",
+        "first": "Kovács",
         "last": "Tamás"
       },
       "isActive": false,
       "age": 18,
       "email": "tamas.takacs91@gmail.com",
       "phone": "703697937",
+      "balance": "$0",
+      "favoriteFruit": ""
+    },
+    {
+      "id": 103,
+      "name": {
+        "first": "Viki",
+        "last": "Fulai"
+      },
+      "isActive": false,
+      "age": 28,
+      "email": "asdf@gmail.com",
+      "phone": "adsf",
+      "balance": "$0",
+      "favoriteFruit": ""
+    },
+    {
+      "id": 104,
+      "name": {
+        "first": "Takács",
+        "last": "Tamás"
+      },
+      "isActive": false,
+      "age": 18,
+      "email": "tamas.takacs91@gmail.com",
+      "phone": "12345",
       "balance": "$0",
       "favoriteFruit": ""
     }
