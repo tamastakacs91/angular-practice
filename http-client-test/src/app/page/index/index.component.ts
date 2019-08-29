@@ -46,7 +46,7 @@ export class IndexComponent implements OnInit, OnDestroy {
         this.getNumberOfUsers();
         this.getUserStatus();
         this.getTotalBalance();
-        //this.getAppleLovers();
+        this.getAppleLovers();
       }
     );
   }
@@ -81,11 +81,13 @@ export class IndexComponent implements OnInit, OnDestroy {
   }
 
   getAppleLovers() {
+
     for (let i = 0; i < this.userList.length; i += 1) {
       if (this.userList[i].favoriteFruit === 'apple') {
         this.appleLovers += 1
       }
     }
+    console.log('lefut');
     return this.appleLovers;
   }
 

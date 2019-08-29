@@ -1,0 +1,29 @@
+<pre>
+    {{list$ | async | json}}
+</pre>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Megrendelés ideje</th>
+      <th>Termék ID</th>
+      <th>Megrendelő</th>
+      <th>Email</th>
+      <th>Cím</th>
+      <th>Mennyiség</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of list$ | async">
+      <td>{{order.id}}</td>
+      <td>{{order.insdate}}</td>
+      <td>{{order.product}}</td>
+      <td>{{order.userName}}</td>
+      <td>{{order.userEmail}}</td>
+      <td>{{order.shippingAddress}}</td>
+      <td>{{order.quantity}}</td>
+    </tr>
+  </tbody>
+
+</table>

@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "product": 3,
+    "insdate": "2019-08-16",
+    "quantity": 3,
+    "userName": "Takács Tamás",
+    "userEmail": "tomi@gmail.com",
+    "shippingAddress": "Bp. IX. Vaskapu u. 10."
+  },
+  {
+    "id": 2,
+    "product": 4,
+    "insdate": "2019-08-14",
+    "quantity": 2,
+    "userName": "Fulai Viktória",
+    "userEmail": "viki@gmail.com",
+    "shippingAddress": "Bp. IX. Vaskapu u. 14."
+  }
+]
