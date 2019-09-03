@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [{
     "id": 1,
     "product": 3,
@@ -15,5 +16,25 @@
     "userName": "Fulai Viktória",
     "userEmail": "viki@gmail.com",
     "shippingAddress": "Bp. IX. Vaskapu u. 14."
+=======
+[
+  {
+    "id": 1,
+    "product": 3,
+    "insdate": "2019-08-18",
+    "quantity": 3,
+    "userName": "Nagy Piroska",
+    "userEmail": "npm@gmail.com",
+    "shippingAddress": "Bp, Nagy Kálmán tér 5."
+  },
+  {
+    "id": 2,
+    "product": 1,
+    "insdate": "2019-08-16",
+    "quantity": 3,
+    "userName": "Nagy Piroska",
+    "userEmail": "npm@gmail.com",
+    "shippingAddress": "Bp, Nagy Kálmán tér 5."
+>>>>>>> 0b8a3c3635e6abd1bb3fcd035f99cd3788db1e67
   }
 ]

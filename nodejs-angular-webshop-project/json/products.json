@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [{
   "id": 1,
   "name": "Emeletes ágy",
@@ -5,3 +6,27 @@
   "description": "Blablablabla ágy, tudsz benne aludni.",
   "color": "red"
 }]
+=======
+[
+    {
+        "id": 1,
+        "name": "Emeletes Ágy",
+        "insdate": "2019-08-16",
+        "description": "Szuper emeletes ágy, akár két mókus méretű gyereknek.",
+        "color": "red"
+    },
+    {
+        "id": 2,
+        "name": "Lapát",
+        "price": 2990
+    },
+    {
+        "name": "Palacsintasütő",
+        "id": 3
+    },
+    {
+        "name": "GofriSütő",
+        "id": 4
+    }
+]
+>>>>>>> 0b8a3c3635e6abd1bb3fcd035f99cd3788db1e67
