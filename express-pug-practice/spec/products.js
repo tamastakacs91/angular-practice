@@ -1,4 +1,4 @@
-describe('Testing products page', function() {
+describe('Testing products page', () => {
     it('should have cards', function() {
         browser.waitForAngularEnabled(false);
         browser.get('http://localhost:3000/products');

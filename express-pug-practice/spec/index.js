@@ -1,4 +1,4 @@
-describe('Testing index page', function() {
+describe('Testing index page', () => {
     it('should have bootstrap', function() {
         browser.waitForAngularEnabled(false);
         browser.get('http://localhost:3000/');

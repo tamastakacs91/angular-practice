@@ -37,3 +37,17 @@
 - Pug template motort használj.
 - Ha ismétlődő elemek, listák vannak, azokat az each segítségével jelenítsd meg.
 - Pontosan kövesd az utasításokat, ha osztály vagy id van megadva a leírásban.
+
+# MariaDB feladat
+## Adatbázis kezelés
+- A meglévő db osztály használata a műveletekhez.
+- Create metódus -  a kapott adatokat szúrd be az adatbázisba
+- Update metódus - az adott id-jű rekordot frissítheted
+- Delete metódus - az adott id-jű rekordot törölheted
+
+## Frontend
+- Legyen egy külön útvonal, ahol fel lehet venni új terméket(router.post)
+- Legyen egy külön útvonal, ahol frissíteni lehet a terméket
+- Legyen egy külön útvonal, ahol törölni lehet a terméket
+- A termékek kártyáit módosítsd, hogy legyen rajtuk törlés gomb, ami pl a /products/delete/1 url-re visz
+- Hozd létre az oldalakat, ahol hozzá tudsz adni vagy törölni termékeket

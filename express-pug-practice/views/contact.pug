@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  .col-12.text-center.mt-5.mb-5
+    p(style="font-size: 25px; font-weight: bold") Write to us and give us your feedback!
+
+  .col-6.offset-md-3
+    form.text-center
+      .form-group
+        label(for="name") Name
+        input.form-control(type="text" id="name")
+      .form-group
+        label(for="email") Email
+        input.form-control(type="email" id="email")
+      .form-group
+        label(for="feedback") Feedback
+        textarea.form-control(type="textarea" id="feedback")
