@@ -46,4 +46,58 @@ module.exports = class DB {
     const result = await this.conn.query(sql);
     return result;
   }
+
+  async create(data) {
+    const sql = `
+    INSERT INTO products 
+    (name, manufacturer, price, stock, active) 
+    VALUES
+    ('${data.name}', ${data.manufacturer}, ${data.price}, ${data.stock}, 1)
+    `;
+
+    const result = await this.conn.query(sql);
+    return console.log(result);
+  }
+
+  async delete(productID) {
+    const sql = `
+    DELETE FROM products
+    WHERE id = ${productID}`;
+
+    const result = await this.conn.query(sql);
+    return console.log(result);
+  }
+
+  async readOne(selectedID) {
+    const sql = `
+    SELECT
+      id,
+      name,
+      stock,
+      active,
+      price,
+      insdate,
+      manufacturer
+      FROM
+      products
+      WHERE id = ${selectedID}
+      `;
+
+    const result = await this.conn.query(sql);
+    return result;
+  }
+
+  async update(productID, product) {
+    const sql = `
+    UPDATE products
+    SET
+    name = '${product.name}',
+    manufacturer = ${product.manufacturer},
+    price = ${product.price},
+    stock = ${product.stock}
+    WHERE id = ${productID}
+    `;
+    const result = await this.conn.query(sql);
+    return console.log(result);
+  }
 };
