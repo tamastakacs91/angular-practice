@@ -4,6 +4,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+// a checkLogin miatt betöltjük a user modult és példányosítjuk alatta
+const UserDB = require('./module/user');
+
+const userDB = new UserDB();
+
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
@@ -22,7 +27,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// checkLogin middleware - ha ok a checkLogin, akkor beállítja a user-t és továbbadja a többieknek (pl az Index.js-nek)
+app.use(async (req, res, next) => {
+  const user = await userDB.checkLogin(req);
+  if (user) {
+    req.user = user;
+  }
+  next();
+});
+
+// cookie törlése
+app.use('/logout', (req, res, next) => {
+  res.clearCookie('uuid');
+  res.redirect('/');
+});
+
 app.use('/', indexRouter);
+app.use('/login', require('./routes/login'));
+
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/about', aboutRouter);

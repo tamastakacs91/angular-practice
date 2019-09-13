@@ -44,16 +44,16 @@ export class IndexComponent implements OnInit, OnDestroy {
       (users) => {
         this.userList = users;
         this.getNumberOfUsers();
+        this.getAppleLovers();
         this.getUserStatus();
         this.getTotalBalance();
-        this.getAppleLovers();
-      }
-    );
+      }      
+      );
   }
 
-  ngOnDestroy() {
-    this.userSubscription.unsubscribe();
-  }
+    ngOnDestroy() {
+      this.userSubscription.unsubscribe();
+    }
 
   getNumberOfUsers() {
     for (let i = 0; i < this.userList.length; i += 1) {
@@ -74,20 +74,20 @@ export class IndexComponent implements OnInit, OnDestroy {
 
   getTotalBalance() {
     for (let i = 0; i < this.userList.length; i += 1) {
+      if(this.userList[i].balance){
       this.userList[i].balance = Number(this.userList[i].balance.substr(1).replace(',', ''));
       this.totalBalance += this.userList[i].balance;
-    }
+    }}
     return this.totalBalance = Number(this.totalBalance.toFixed());
   }
 
   getAppleLovers() {
 
     for (let i = 0; i < this.userList.length; i += 1) {
-      if (this.userList[i].favoriteFruit === 'apple') {
+      if (this.userList[i].favoriteFruit == 'apple') {
         this.appleLovers += 1
       }
     }
-    console.log('lefut');
     return this.appleLovers;
   }
 

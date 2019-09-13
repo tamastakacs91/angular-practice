@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Registration
+  form.form(action="/login/new-user", method="post")
+    .form-group
+      label Name
+      input.form-control(name="name")
+    .form-group
+      label Email
+      input.form-control(name="email")
+    .form-group
+      label Password
+      input.form-control(name="password")
+    button.btn.btn-primary(type="submit") Register
+    a.btn.btn-danger.btn-large(href="/") Cancel
+
+

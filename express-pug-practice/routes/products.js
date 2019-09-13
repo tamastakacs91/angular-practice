@@ -11,11 +11,11 @@ router.get('/', async (req, res, next) => {
   const realData = await db.read();
   console.log(realData[0]);
 
-  res.render('products', { title: 'Products', products: realData });
+  res.render('products', { title: 'Products', products: realData, user: req.user || {} });
 });
 
 router.get('/new', async (req, res, next) => {
-  res.render('new-product');
+  res.render('new-product', { user: req.user || {} });
 });
 
 // Create new product.
@@ -32,7 +32,7 @@ router.get('/delete/:id', async (req, res, next) => {
 router.get('/:id', async (req, res, next) => {
   const selectedProduct = await db.readOne(req.params.id);
   const selected = selectedProduct[0];
-  res.render('update-product', { product: selected });
+  res.render('update-product', { product: selected, user: req.user || {} });
 });
 
 router.post('/:id', async (req, res, next) => {
