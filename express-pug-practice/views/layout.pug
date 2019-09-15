@@ -25,11 +25,19 @@ html
           if user
             if user.id
               li 
+<<<<<<< HEAD
                 span.font-weight-bold.mr-4 #{ user.name }
                 a.btn.btn-primary(href="/logout") Logout
             else
               li
                 a.btn.btn-success(href="/login") Login
+=======
+                span.mr-2 #{ user.name }
+                a.btn.btn-info(href="/logout") logout
+            else 
+              li 
+                a.btn.btn-success(href="/login") login
+>>>>>>> 67a67377777d27ce73bd752ff1a7a1646f17b793
 
     .container
       block content

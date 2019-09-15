@@ -2,6 +2,7 @@ extends layout
 
 block content
   
+<<<<<<< HEAD
   .container-fluid
     .row
     a.btn.btn-primary.btn-large.mb-5.mt-5(href="/products/new") Add new Product
@@ -17,3 +18,21 @@ block content
               a.btn.btn-success.btn-large.mr-5(href=updateUrl) Update
               - deleteUrl = `products/delete/${product.id}`
               a.btn.btn-danger.btn-large(href=deleteUrl) Delete
+=======
+  .row
+    each product in products
+      .col-sm-12.col-md-4.mb-3
+        .card.h-100
+          .card-header 
+            h4= product.name
+          .card-body
+            .p Manufacturer: #{product.manufacturer}
+            .p Price: #{product.price}
+          .card-footer
+            - let url = `/products/delete/${product.id}`;
+            - let updateUrl = `/products/update/${product.id}`;
+            .btn-group
+              a.btn.btn-info Show
+              a.btn.btn-warning(href=updateUrl) Update
+              a.btn.btn-danger(href=url) Del
+>>>>>>> 67a67377777d27ce73bd752ff1a7a1646f17b793

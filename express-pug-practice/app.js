@@ -44,7 +44,6 @@ app.use('/logout', (req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/login', require('./routes/login'));
-
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/about', aboutRouter);
